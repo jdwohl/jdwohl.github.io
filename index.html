@@ -4,67 +4,175 @@
 
 <head>
     <title>
-        Website (in progress)
+        Jonathan Wohl -- Website
     </title>
 
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Poppins&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="script.js"></script>
 
 </head>
 
 <body>
-    <section>
-        <h1>About Me</h1>
-
-        <p>Insert description here</p>
-
-    </section>
-
-    <section>
-        <h2>Education</h2>
-
-        <ol>
-            <li>
-                Vassar College
-                <ul>
-                    <li>highlight1</li>
-                    <li>highlight2</li>
-                    <li>highlight3</li>
-                </ul>
-
-            </li>
-            <li>
-                Chadwick School
-                <ul>
-                    <li>highlight1</li>
-                    <li>highlight2</li>
-                    <li>highlight3</li>
-                </ul>
-            </li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <ol>
-            <li>job1</li>
-            <li>job2</li>
-            <li>job3</li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Portfolio</h2>
-        <a href="portfolio-photos.html">My photography portfolio!</a>
-        <a href="portfolio-games.html">My game development portfolio!</a>
-    </section>
-
-    <section>
-        <h3>Socials</h3>
-        <ul>
-            <li>social1</li>
-            <li>social2</li>
-            <li>social3</li>
+    <section id="aboutme">
+        <h1>Hi, I'm Jonathan! <br> My passions include:</h1>
+        <ul id="aboutme-sections" class="section-header">
+            <li data-section="curiosity-and-learning">Curiosity &amp; Learning</li>
+            <li data-section="programming">Programming</li>
+            <li data-section="storytelling">Storytelling</li>
         </ul>
+        <p>Click on a box to jump to that section!</p>
+
+    </section>
+
+    <section id="curiosity-and-learning">
+        <h2 class="section-header">Curiosity &amp; Learning</h2>
+        <p class="school">
+            <img id="vassar-logo" src="img\Vassar_logo_circle.png" alt="Logo of Vassar College, located in Poughkeepsie, New York.">
+            <br>
+            <strong><em>Vassar College Education</em></strong>
+        </p>
+        <ul class="course-highlights">
+            <li>
+                <p><strong>Computer Science Courses</strong></p>
+                <ul>
+                    <li>
+                        <p><strong>Beginner</strong> <span>⮞</span></p>
+                        <ul id="cs-beginner">
+                            <li><p><strong>CMPU 101:<br>Problem-Solving and Abstraction</strong><br>  Used the <em>Racket</em> programming language to learn basic algorithms and core CS fundamentals such as lists, recursion, and iteration.</p></li>
+                            <li id="cs102-description"><p><strong>CMPU 102:<br>Data Structures and Algorithms</strong><br> Used <em>Java</em> to learn Object-Oriented Programming along with crucial data structures.</p></li>
+                            <li><p><strong>CMPU 145:<br>Foundations of Computer Science</strong><br> Used <em>Racket</em> to learn theoretical foundations of CS such as set theory and logic, as well as basic proofs.</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Intermediate</strong> <span>⮞</span></p>
+                        <ul id="cs-intermediate">
+                            <li><p><strong>CMPU 203:<br>Software Design and Implementation</strong><br> Worked within a team to create an <a href="#cs203-app">Android application</a> using <em>Java</em> within IDE's such as <em>IntelliJ</em> and <em>Android Studio</em>.</p></li>
+                            <li id="cs224-description"><p><strong>CMPU 224: Computer Organization</strong><br> Learned about how computers work behind the scenes through topics such as binary, <em>Assembly language</em>, the call stack, and much more, learning the basics of <em>C</em> along the way.</p></li>
+                            <li><p><strong>CMPU 240:<br>Theory of Computation</strong><br> Developed an understanding of more advanced CS theory concepts such as context free grammars, push-down automata, and Turing machines.</p></li>
+                            <li><p><strong>CMPU 241:<br>Analysis of Algorithms</strong><br> Learned about advanced <em>algorithms</em> through topics such as sorting, searching trees, and more along with more complex data structures like red-black trees.</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Advanced</strong> <span>⮞</span></p>
+                        <ul id="cs-advanced">
+                            <li id="cs314-description"><p><strong>CMPU 314:<br>Projects in Digital Media</strong><br>Used <em>C#</em> within the <em>Unity</em> game development engine to create <a href="#storytelling">two game prototypes</a> over the semester.</p></li>
+                            <li><p><strong>CMPU 331:<br>Compilers</strong><br> Learned how compilers work by making our own over the course of the semester using <em>OCaml</em>, adding functionality such as loops, functions, and type-checking as well as adding optimizations.</p></li>
+                            <li><p><strong>CMPU 334:<br>Operating Systems</strong><br> Systems Learned about how <em>Operating Systems</em> work behind the scenes, using the Linux kernel as a model. Topics covered include multilevel feedback queues, memory management, and file systems.</p></li>
+                            <li><p><strong>CMPU 377:<br>Parallel Programming</strong><br> Developed skills in using parallel programming techniques in different languages such as <em>C</em>, <em>Java</em>, <em>Go</em>, and <em>Ruby</em>, along with the theoretical foundations of these parallel concepts such as Mutual Exclusion, Locks, Semaphores, and Tuple Spaces.</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li>
+                <p><strong>Other Courses</strong></p>
+                <ul>
+                    <li>
+                        <p><strong>Mathematics</strong></p>
+                        <ul>
+                            <li><p>Math 220: Multivariable Calculus<br></p></li>
+                            <li><p>Math 221: Linear Algebra<br>a</p></li>
+                            <li><p>Math 361: Modern Algebra<br>aa</p></li>
+                            <li><p>Math 364: Advanced Linear Algebra<br></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Other: Quantitative</strong></p>
+                        <ul>
+                            <li><p>Econ 200: Macroeconomic Theory<br></p></li>
+                            <li><p>Econ 201: Microeconomic Theory<br></p></li>
+                            <li><p>Cognitive Science 213: Language<br></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Other: Qualitative</strong></p>
+                        <ul>
+                            <li><p>Music 105: <br>a</p></li>
+                            <li><p>Philosophy 210: <br></p></li>
+                            <li><p>History 220: <br></p></li>
+                            <li><p>Philosophy 314: <br></p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+    </section>
+
+
+    <section id="programming">
+        <h2 class="section-header">Programming</h2>
+        <ul class="programming-experience">
+            <li>
+                <h3>Software Engineering Bootcamp: Optimum CareerPath Program</h3>
+                <p>Through this intensive 12-week bootcamp as an employee of Optimum Healthcare IT, I gained truly comprehensive knowledge about being a software engineer. Topics covered include:</p>
+                    <ul>
+                        <li>
+                            <p>Learning two programming languages, <em>JavaScript</em> and <em>C#</em>, from the basics to advanced subjects</p>
+                        </li>
+                        <li>
+                            <p>Becoming a <em>Certified Scrum Master</em></p>
+                        </li>
+                        <li>
+                            <p>Learning essential tools for Windows development such as <em>Visual Studio</em>, <em>.NET</em>, <em>ASP.NET</em>, and <em>WPF</em></p>
+                        </li>
+                        <li>
+                            <p>Gaining experience with web development languages and tools such as <em>HTML</em>, <em>CSS</em>, <em>Bootstrap</em>, <em>JQuery</em>, and <em>Angular</em></p>
+                        </li>
+                        <li>
+                            <p>Practicing tools for interacting with relational databases such as <em>MSSQL</em>, <em>Entity Framework</em>, and <em>Dapper</em></p>
+                        </li>
+                    </ul>
+                <p></p>
+            </li>
+            <li>
+                <h3>Coaching for Vassar Computer Science</h3>
+                <p>As part of my programming experience at Vassar College, I worked as a coach (teaching assistant) for 2 classes: <a class="course-link" data-courseid="102" href="#cs102-description">CMPU 102</a> for 1 semester, and <a class="course-link" data-courseid="224" href="#cs224-description">CMPU 224</a> for 2 semesters.</p>
+                <p>Both of these jobs required deep knowledge of specific languages (<em>Java</em>, <em>C</em>, and <em>Assembly</em>), along with relevant topics such as Object-Oriented Programming, computer memory, the call stack, the <em>GDB</em> debugger, and much more.</p>
+            </li>
+            <li>
+                <h3>Software Development Group Project</h3>
+                <p id="cs203-app">As part of my CMPU 203 course at Vassar, I worked within a group of 4 to create an Android application using <em>Java</em>, <em>IntelliJ</em>, and <em>Android Studio</em> with <em>MVC</em> architecture. The application's purpose was for scheduling events, specifically designed for students with strict class schedules to work around.</p>
+                    <p>My role within the group was to be one of two developers focusing on the back end, including the underlying <em>model</em> of users and schedules along with interactions between that model and the user interface using a <em>controller</em> I also was the main person working on testing (unit tests) and persistence using Google's <em>Firebase</em>.</p>
+                    <p>⇒ <a href="#">The source code for the app!</a></p>
+            </li>
+            <li>
+                <h3>Portfolio: Github</h3>
+                <p>To view my current programming projects, including the source code for the games below, check out my GitHub account!<br>
+                    ⇒ <a href="https://github.com/jdwohl?tab=repositories"> My GitHub</a></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="storytelling">
+        <h2 class="section-header">Storytelling</h2>
+        <ul id="storytelling-demos">
+            <li>
+                <h3>Text Adventure Detective Game</h3>
+                <p>For the first game I created for <a class="course-link" data-courseid="314" href="#cs314-description">CMPU 314</a>, I wanted to create a text adventure -- games that you play by typing to move around and take action -- with a twist. My goal was to combine a text adventure with something called a <a href="#">logic puzzle</a> to create a uniquely engaging experience.</p>
+                <p>Check out the game here ⇒ <a href="#">Text Adventure</a></p>
+            </li>
+            <li>
+                <h3>Fantasy Merchant Game</h3>
+                <p>In the second half of <a class="course-link" data-courseid="314" href="#cs314-description">CMPU 314</a>, I wanted to create the prologue of a game that I had been wanting to make for a long time: one where you play as a merchant in a fantasy world, experiencing a grand story from that unique perspective.</p>
+                <p>Develop friendships with your customers, make choices that affect the story and your morality, gain useful information about the world and its inhabitants, and much more! This demo currently has four endings, obtained by making different choices, both obvious and subtle.</p>
+                <p>Check out the game here ⇒ <a href="#">Fantasy Merchant</a></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contactme">
+        <h3>Contact me!</h3>
+        <address>
+            Email: <a href="mailto:jonathandwohl@gmail.com" target="_blank">jonathandwohl@gmail.com</a>
+        </address>
     </section>
 </body>
 

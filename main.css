@@ -1,3 +1,205 @@
-body {
-    color: rgb(9, 77, 77);
+html{
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    background-color: black;
+}
+
+a {
+    color: rgb(255, 0, 0)
+}
+
+/* a:visited {
+    color: rgb(255, 0, 0);
+} */
+
+/* 
+THEME GIVEN: #648B56, #004569, #5868FF, #6098D1, #E50D4E
+               ^  green, may replace with black
+*/
+
+section {
+    margin: 0px;
+    padding-block: 40px;
+	transform: skewY(-5deg);
+}
+
+section > * {
+    max-width: 100em;
+	margin: auto;
+	transform: skewY(5deg);
+}
+
+#aboutme {
+    text-align: center;
+    color: white;
+    text-shadow: gray 1.75px 1.75px 1px;
+    padding-top: 30px;
+}
+
+
+#aboutme h1 {
+    padding-block-end: 16px;
+}
+
+.section-header {
+    text-align: center;
+    font-style: italic;
+    text-shadow: white 1px 1px;
+}
+
+#aboutme-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+#aboutme-sections li {
+    font-size: x-large;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: white;
+    text-shadow: gray 1.5px 1.5px;
+    padding-inline: 20px;
+    margin-inline: 10px;
+    margin-block: 10px;
+}
+
+#aboutme p {
+    padding-block-start: 16px;
+}
+
+section > h2.section-header {
+    margin-block-start: 5px;
+    margin-block-end: 15px;
+}
+
+#curiosity-and-learning {
+    background-image: linear-gradient(45deg, #657aff, #92effd);
+}
+
+.school {
+    text-align: center;
+    margin-block: 10px;
+}
+
+#vassar-logo {
+    background: #f3f3f3;
+    border-radius: 50%;
+    height: 66px;
+    width: 66px;
+    box-shadow: 0px 5px 5px 0px rgb(0, 0, 0);
+    margin: 8px;
+    overflow: hidden;
+}
+
+.course-highlights {
+    list-style: none;
+    text-align: center;
+    padding-inline: 10px;
+    margin-block-end: 24px;
+}
+
+.course-highlights ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    padding-inline-start: 0px;
+    margin-inline: 0px;
+    flex-wrap: wrap;
+}
+
+.course-highlights > li > p {
+    padding-block: 16px;
+    margin-block: 0px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 1px;
+}
+
+.course-highlights ul li {
+    flex: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 200px;
+    padding-inline: 0px;
+}
+
+.course-highlights ul ul {
+    list-style: none;
+    display: none;
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.course-highlights > li > ul > li > p {
+    border-style:groove;
+    border-color: rgb(0, 0, 0);
+    border-radius: 1px;
+    padding-block: 16px;
+    margin-block: 0px;
+}
+
+.course-highlights > li > ul > li > p strong {
+    text-decoration: underline;
+}
+
+.course-highlights ul ul li {
+    border-style: solid;
+    border-color: black;
+    border-radius: 1px;
+    max-width:fit-content;
+    padding: 1.5px;
+}
+
+#programming {
+    background-image: linear-gradient(45deg, #ffc371, #ff5f6d);
+}
+
+.programming-experience, #storytelling-demos {
+    list-style: none;
+    padding-inline: 16px;
+}
+
+.programming-experience h3, #storytelling-demos h3 {
+    text-decoration: underline;
+}
+
+.programming-experience li > * {
+    margin-block: 8px;
+}
+
+.programming-experience li > p, #storytelling-demos li > p {
+    padding-inline-start: 10px;
+}
+
+.programming-experience ul li::marker {
+    content: "↪  ";
+}
+
+#storytelling {
+    background-image: linear-gradient(45deg, #c33764, #1d2671);
+    color: rgb(236, 236, 236);
+}
+
+#storytelling h2 {
+    text-shadow: black 1.5px 1.5px;
+}
+
+#contactme {
+    margin: 20px;
+    color: white;
+}
+
+#contactme address {
+    margin-inline-start: 8px;
+}
+  
