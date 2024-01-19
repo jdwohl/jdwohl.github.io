@@ -11,14 +11,14 @@ $('.course-highlights > li > ul > li > p').click(function (e) {
 			.slideDown(() => {
 				$(this).siblings().css('display', 'flex');
 			});
-		$(this).children('span').remove();
-		$(this).append('<span> ▼</span>');
+		// $(this).children('span').remove();
+		// $(this).append('<span> ▼</span>');
 	} else {
 		$(this)
 			.siblings()
 			.slideUp(() => {});
-		$(this).children('span').remove();
-		$(this).append('<span> ▶</span>');
+		// $(this).children('span').remove();
+		// $(this).append('<span> ▶</span>');
 	}
 });
 
@@ -34,24 +34,24 @@ open_coursebox = function (courseid) {
 			$('#cs-beginner').slideDown(() => {
 				$('#cs-beginner').css('display', 'flex');
 			});
-			$('#cs-beginner').siblings().children('span').remove();
-			$('#cs-beginner').siblings().append('<span> ▼</span>');
+			// $('#cs-beginner').siblings().children('span').remove();
+			// $('#cs-beginner').siblings().append('<span> ▼</span>');
 			window.location.href = `${baseUrl}#cs102-description}`;
 			break;
 		case '224':
 			$('#cs-intermediate').slideDown(() => {
 				$('#cs-intermediate').css('display', 'flex');
 			});
-			$('#cs-intermediate').siblings().children('span').remove();
-			$('#cs-intermediate').siblings().append('<span> ▼</span>');
+			// $('#cs-intermediate').siblings().children('span').remove();
+			// $('#cs-intermediate').siblings().append('<span> ▼</span>');
 			window.location.href = `${baseUrl}#cs224-description}`;
 			break;
 		case '314':
 			$('#cs-advanced').slideDown(() => {
 				$('#cs-advanced').css('display', 'flex');
 			});
-			$('#cs-advanced').siblings().children('span').remove();
-			$('#cs-advanced').siblings().append('<span> ▼</span>');
+			// $('#cs-advanced').siblings().children('span').remove();
+			// $('#cs-advanced').siblings().append('<span> ▼</span>');
 			window.location.href = `${baseUrl}#cs314-description}`;
 			break;
 	}
