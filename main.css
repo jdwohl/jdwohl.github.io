@@ -84,9 +84,17 @@ section > h2.section-header {
     background-image: linear-gradient(45deg, #77d8ff, rgb(185, 247, 247));
 }
 
+#curiosity-and-learning .section-header {
+    text-shadow: gray 1px 1px
+}
+
+
 .school {
     text-align: center;
-    margin-block: 10px;
+    margin-block-start: 10px;
+    text-shadow: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px gray;
+    margin-block-end: 20px;
 }
 
 #vassar-logo {
@@ -121,6 +129,8 @@ section > h2.section-header {
     border-style: solid;
     border-color: black;
     border-radius: 1px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0.5px rgb(84, 166, 194);
 }
 
 .course-highlights ul li {
@@ -148,6 +158,8 @@ section > h2.section-header {
     padding-block: 16px;
     margin-block: 0px;
     cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .course-highlights > li > ul > li > p strong {
@@ -213,11 +225,34 @@ section > h2.section-header {
     font-style: normal;
     display: flex; 
     flex-direction: column; 
-    align-items: center;
+    align-items: flex-start;
 }
 
 #contactme address p {
     margin: 2px;
     margin-inline-start: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #contactme address {
+        margin-inline-start: 0px;
+        border: solid;
+        border-color: white;
+        align-items: center;
+    }
+
+    #contactme address p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contactme address p span span {
+        display: none;
+    }
 }
   
