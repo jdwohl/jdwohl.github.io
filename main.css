@@ -133,6 +133,13 @@ section > h2.section-header {
     text-shadow: 1px 1px 0.5px rgb(84, 166, 194);
 }
 
+/* .course-highlights > li > p > span {
+    color: rgb(61, 60, 60);
+    font-style: normal;
+    text-shadow: none;
+    font-weight: normal;
+} */
+
 .course-highlights ul li {
     flex: 33.33%;
     display: flex;
