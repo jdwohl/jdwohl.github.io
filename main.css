@@ -81,7 +81,7 @@ section > h2.section-header {
 }
 
 #curiosity-and-learning {
-    background-image: linear-gradient(45deg, #77d8ff, rgb(185, 247, 247));
+    background-image: linear-gradient(45deg, #77d8ff, rgb(207, 252, 252));
 }
 
 #curiosity-and-learning .section-header {
@@ -111,7 +111,7 @@ section > h2.section-header {
     list-style: none;
     text-align: center;
     padding-inline: 10px;
-    margin-block-end: 40px;
+    margin-block-end: 54px;
 }
 
 .course-highlights ul {
@@ -182,7 +182,7 @@ section > h2.section-header {
 }
 
 #programming {
-    background-image: linear-gradient(45deg, #ffc371, #ff5f6d);
+    background-image: linear-gradient(45deg, #fce87a, #e96e5e);
 }
 
 .programming-experience, #storytelling-demos {
@@ -207,7 +207,7 @@ section > h2.section-header {
 }
 
 #storytelling {
-    background-image: linear-gradient(45deg, #802845, #470b5f);
+    background-image: linear-gradient(45deg, #850d7b, #470b5f);
     color: rgb(236, 236, 236);
 }
 
